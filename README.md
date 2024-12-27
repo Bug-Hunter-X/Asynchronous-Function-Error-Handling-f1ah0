@@ -1,0 +1,3 @@
+# Asynchronous Function Error Handling in Swift
+
+This repository demonstrates a common error in Swift when handling asynchronous operations:  forgetting to handle potential errors in a completion handler. The `fetchData` function simulates a network request, and has a 50% chance of returning an error.  The initial implementation lacks robust error handling, leading to potential crashes or unexpected behavior.  The solution shows how to properly address this using `Result` and a switch statement to handle both success and failure cases.
